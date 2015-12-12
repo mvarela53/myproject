@@ -14,6 +14,6 @@ new.Date<-as.POSIXlt(new.Date,format="%d/%m/%Y %H:%M:%S")
 plot(new.Date,my.data$Sub_metering_1,type='l',ylab="Energy sub metering")
 lines(new.Date,my.data$Sub_metering_2,col="red")
 lines(new.Date,my.data$Sub_metering_3,col="blue")
-legend("topright",pch=1,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright",lwd=1,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 
