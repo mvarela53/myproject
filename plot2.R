@@ -11,6 +11,6 @@ for(n in 3:9){
 new.Date<-paste(my.data$Date,my.data$Time)
 new.Date<-as.POSIXlt(new.Date,format="%d/%m/%Y %H:%M:%S")
 #create the plot
-plot(new.Date,my.data$Global_active_power,type='l',ylab="Global Active Power")
+plot(new.Date,my.data$Global_active_power,type='l',ylab="Global Active Power”,xlab=“”)
 
 

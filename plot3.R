@@ -11,7 +11,7 @@ for(n in 3:9){
 new.Date<-paste(my.data$Date,my.data$Time)
 new.Date<-as.POSIXlt(new.Date,format="%d/%m/%Y %H:%M:%S")
 #create the plot
-plot(new.Date,my.data$Sub_metering_1,type='l',ylab="Energy sub metering")
+plot(new.Date,my.data$Sub_metering_1,type='l',ylab="Energy sub metering”,xlab=“”)
 lines(new.Date,my.data$Sub_metering_2,col="red")
 lines(new.Date,my.data$Sub_metering_3,col="blue")
 legend("topright",lwd=1,col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
